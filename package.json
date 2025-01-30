@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "jest": "^29.7.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "nodejavascript",
+  "version": "1.0.0",
+  "description": "\"# Node-Notepad-JavaScript\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercybabayemi/Node-Notepad-JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mercybabayemi/Node-Notepad-JavaScript/issues"
+  },
+  "homepage": "https://github.com/mercybabayemi/Node-Notepad-JavaScript#readme"
+}
