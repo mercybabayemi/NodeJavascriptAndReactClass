@@ -1,0 +1,11 @@
+{
+  "name": "february2025",
+  "version": "1.0.0",
+  "main": "array.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
