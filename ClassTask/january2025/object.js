@@ -26,3 +26,8 @@ console.log(values);
 
 let entries = Object.entries(user);
 console.log(entries);
+
+let {key, values} = user.entries();
+console.log(key);
+console.log(values)
+

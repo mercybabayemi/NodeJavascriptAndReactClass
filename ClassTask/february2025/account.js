@@ -14,17 +14,23 @@ function deposit(amount){
   return bankAccount.balance;
 }
 
-// let withdraw = (amount) =>{
-//   if(amount < 0 ){
-//     throw new Error("Amount must be greater than zero");
-//   }
-//   if(amount > bankAccount.balance){
-//     throw new Error("Amount must be less than balance");
-//   }
-//   else{
-//     bankAccount.balance -= amount;
-//   }
-//   return bankAcount.balance
-// }
+function withdraw(amount){
+  if(amount < 0){
+    throw new Error("Amount must be greater than zero");
+  }
+  if(amount > bankAccount.balance){
+    throw new Error("Amount must be less than balance");
+  }
+  else{
+    bankAccount.balance -= amount;
+  }
 
-module.exports = {deposit};
+  return bankAccount.balance;
+}
+
+function printBalance(){
+  let sentence = `The final balance is ${bankAccount.balance}`
+  return sentence
+}
+
+module.exports = {deposit, withdraw, printBalance};

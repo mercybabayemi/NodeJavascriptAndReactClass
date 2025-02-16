@@ -1,6 +1,6 @@
-const {getStudentName, secondCourse, getZipAddress, updateAge, addGpaValue} = require("./ObjectTask1.js")
+const {getStudentName, secondCourse, getZipAddress, updateAge, addGpaValue, getDetails} = require("./ObjectTask1.js")
 let student = {
-  name: "JohnDoe",
+  name: "John Doe",
   age: 22,
   courses: ["Math", "Physics", "Computer Science"],
   address: {
@@ -11,7 +11,7 @@ let student = {
 
 test("Get the student's name", ()=>{
   let result = getStudentName(student);
-  let gotten = "JohnDoe";
+  let gotten = "John Doe";
   expect(result).toBe(gotten)
 });
 
@@ -37,4 +37,10 @@ test("Add gpa", ()=>{
   let actual = addGpaValue(student);
   let expected = 3.8
   expect(actual).toBe(expected)
+});
+
+test("print details", ()=>{
+  let actual = getDetails(student);
+  let expected = "John Doe is 23 years old and has a GPA of 3.8"
+
 });

@@ -17,13 +17,14 @@ function destructuring(){
 }
 
 const secondEmployee = () =>{
-  let count = 0
-  for(let employee in company.employees){
-    ++count;
-    if(count == 2){
-      return `${company.employees[employee]["name"]}`;
-    }
-  }
+  return company.employees.filter((element) => element.id == 2);
+  // let count = 0
+  // for(let employee in company.employees){
+  //   ++count;
+  //   if(count == 2){
+  //     return `${company.employees[employee]["name"]}`;
+  //   }
+  // }
 }
 
 function printNameAndDepartment(){

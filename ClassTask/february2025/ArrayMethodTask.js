@@ -10,4 +10,14 @@ const squareOfEachNumber = (scores) => {
   return scores.map((score) => score * score);
 };
 
-module.exports = {greaterThanOrEqualTo70, add10To, squareOfEachNumber};
+function bookDistribution(members, books){
+  let newObj = {}
+  for(const [index, key] of members.entries()){
+    newObj[key] = books[index];
+  };
+  return newObj;
+}
+
+
+
+module.exports = {greaterThanOrEqualTo70, add10To, squareOfEachNumber, bookDistribution};

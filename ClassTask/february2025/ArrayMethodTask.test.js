@@ -1,4 +1,4 @@
-const {greaterThanOrEqualTo70, add10To, squareOfEachNumber } = require("./scores.js");
+const {greaterThanOrEqualTo70, add10To, squareOfEachNumber, bookDistribution } = require("./ArrayMethodTask.js");
 
 test("find scores greater or equal to 70", ()=>{
   let scores = [60, 98, 56, 45, 70,73,98];
@@ -19,4 +19,17 @@ test("square of each number", ()=>{
   let result = squareOfEachNumber(scores);
   let actual = [4,9,16,25,36,49];
   expect(result).toEqual(actual);
+});
+
+test("pairing members to books available", ()=>{
+  let books = ["wizard of oz", "Romeo and Juliet", "Julius Ceaser", "Arms and the man"];
+  let members = ["Mercy", "Janet", "IyanuOluwa", "Boluwatife"];
+  let result = bookDistribution(books,members);
+  let expected = {
+   "wizard of oz": "Mercy",
+   "Romeo and Juliet" : "Janet",
+   "Julius Ceaser" : "IyanuOluwa",
+   "Arms and the man" : "Boluwatife"
+  };
+  expect(result).toStrictEqual(expected);
 });

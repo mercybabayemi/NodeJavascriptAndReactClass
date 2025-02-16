@@ -19,8 +19,13 @@ let updateAge = (student) =>{
 }
 
 function addGpaValue(student){
-  student.GPA = 3.8
-  return student.GPA
+  student.GPA = 3.8;
+  return student.GPA;
 }
 
-module.exports = {getStudentName, secondCourse, getZipAddress, updateAge, addGpaValue};
+function getDetails(student){
+  let sentence = `${student.name} is ${student.age} years old and has a GPA of ${student.GPA}`;
+  return sentence;
+}
+
+module.exports = {getStudentName, secondCourse, getZipAddress, updateAge, addGpaValue, getDetails};
