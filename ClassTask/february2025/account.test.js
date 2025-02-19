@@ -22,6 +22,12 @@ test("withdraw 100", ()=>{
   expect(actual).toBe(expected)
 });
 
+test("Withdraw less than 0 throws exception", ()=>{
+  expect(()=>{
+    withdraw(-2);
+  }).toThrow("Amount must be greater than zero")
+});
+
 test("withdraw throws exception", ()=>{
   expect(()=>{
     withdraw(1000);

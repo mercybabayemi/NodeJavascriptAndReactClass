@@ -51,6 +51,8 @@ test("return objects with age greater than 40", ()=>{
 });
 
 test("Replace odd number with one and even number with zero", () =>{
-  let result = evenAndOddNumberReplacement();
+  arr = [4,5,8,8,8,2,9]
+  let result = evenAndOddNumberReplacement(arr);
   let answer = [0,1,0,0,0,0,1]
+  expect(result).toEqual(answer)
 });

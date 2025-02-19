@@ -24,7 +24,6 @@ function addThreeToEachElement(arr){
 }
 
 
-
 function getOddNumbers(array){
   return array.filter((number) => number % 2 !== 0);
 }
@@ -37,8 +36,16 @@ function getStudents(students){
   return students.filter((student)=> student.age > 20);
 }
 
-const evenAndOddNumberReplacement = (arr) =>{
-
+function evenAndOddNumberReplacement(arr){
+  let newarr = [];
+  arr.forEach((element) =>{
+    if(element % 2 == 0){
+      newarr.push(0)
+    } else {
+      newarr.push(1)
+    }
+  });
+  return newarr;
 }
 
 
@@ -48,5 +55,6 @@ module.exports = {
   addThreeToEachElement, 
   getOddNumbers,
   getWordsGreaterThanFourLetters,
-  getStudents
+  getStudents,
+  evenAndOddNumberReplacement,
 };
