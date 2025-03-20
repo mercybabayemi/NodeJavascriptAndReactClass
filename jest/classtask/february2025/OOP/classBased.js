@@ -1,7 +1,8 @@
 //Class creation of object
 class Human{
   #name;
-  #age;  //private field with #
+  #age;
+   //private field with #
   constructor(name,age){
     this.#name = name;
     this.#age = age;

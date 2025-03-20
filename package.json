@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "express": "^4.21.2",
     "jest": "^29.7.0",
     "prompt-sync": "^4.2.0"
   },
@@ -19,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/mercybabayemi/Node-Notepad-JavaScript/issues"
   },
-  "homepage": "https://github.com/mercybabayemi/Node-Notepad-JavaScript#readme"
+  "homepage": "https://github.com/mercybabayemi/Node-Notepad-JavaScript#readme",
+  "keywords": []
 }
