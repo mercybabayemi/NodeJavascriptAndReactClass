@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import {useGetNowPlayingMoviesQuery, useGetPopularMoviesQuery} from "../../service/MovieAPI.jsx";
 
-const NowPlaying = () => {
-    return(
-        <div className="container">
-            NowPlaying
+import MovieCard from "../../reusable/MovieCard";
+export const NowPlaying = () => {
+    const nowPlayingData = useGetNowPlayingMoviesQuery();
+    return (
+        <div>
+            <MovieCard data={nowPlayingData}/>
         </div>
-    )
-}
-
-export default NowPlaying;
+    );
+};

@@ -1,0 +1,76 @@
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background for the homepage */
+}
+
+.HomePage h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem; /* Larger title */
+}
+
+.HomePage p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem; /* Slightly larger text for better readability */
+}
+
+.buttonContainer {
+    margin-bottom: 2rem; /* Space between buttons and other sections */
+}
+
+.HomePage button {
+    border: none;
+    background-color: grey;
+    color: black;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 1rem; /* Adjust margin for spacing between buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.HomePage button:hover {
+    background-color: navajowhite;
+    transform: translateY(-2px);
+}
+
+.aboutSection, .productsSection, .cartSection {
+    width: 100%;
+    max-width: 800px; /* Limit the width of sections */
+    margin: 2rem 0; /* Space between sections */
+    padding: 1rem;
+    background-color: white; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.aboutSection h2, .productsSection h2, .cartSection h2 {
+    margin-bottom: 1rem; /* Space below section titles */
+}
+
+.cartButton {
+    border: none;
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cartButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 576px) {
+    .HomePage button {
+        padding: 0.6rem 1rem; /* Adjust button padding for smaller screens */
+        width: 100%; /* Make buttons full width */
+    }
+}

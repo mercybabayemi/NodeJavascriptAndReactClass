@@ -1,0 +1,140 @@
+
+.header {
+    background-color: gray;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.19);
+    padding: 1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.navBar nav ul li a:hover::after {
+    width: 100%;
+}
+
+.cart button {
+    background-color: white;
+    color: black;
+    border-color: white;
+    padding: 0.7rem 1.5rem;;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart button:hover {
+    background-color: navajowhite;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    .container {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .navigation {
+        margin: 5rem auto;
+    }
+
+    .navigation nav ul {
+        gap: 1rem;
+    }
+
+    .cart button {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        width: 100%;
+        padding: 0 1rem; /* Add some padding for smaller screens */
+    }
+
+    .logo {
+        text-align: center; /* Center the logo */
+        margin-bottom: 1rem; /* Add space below the logo */
+    }
+
+    .navigation {
+        margin: 1rem auto; /* Reduce margin for better spacing */
+    }
+
+    .navigation nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .cart button {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
